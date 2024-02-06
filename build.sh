@@ -27,7 +27,5 @@ else
 fi
 
 ${cli_cmd} build . \
-    --build-arg CREATOR_VERSION=$TAG \
-    --no-cache \
     -f Dockerfile \
     -t ghcr.io/deb4sh/ci-terraform-image:$TAG
