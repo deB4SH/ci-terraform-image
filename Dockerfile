@@ -2,7 +2,7 @@ FROM debian:bookworm-slim
 MAINTAINER deb4sh @ github
 #install required packages
 RUN apt update \
-    && apt install -y curl wget unzip gpg
+    && apt install -y curl wget unzip gpg git
 
 #install terraform
 RUN wget -O terraform_1.7.2_linux_amd64.zip https://releases.hashicorp.com/terraform/1.7.2/terraform_1.7.2_linux_amd64.zip \
